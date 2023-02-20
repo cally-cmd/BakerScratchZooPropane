@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1113299597
+    locked: 0
+  - name: Flavor
+    uniqueID: 3537670969
+    locked: 0
+  - name: Interaction
+    uniqueID: 4070962039
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
