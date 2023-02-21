@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -5697,10 +5697,10 @@ TextureImporter:
       tileset_18: 587784957
       tileset_107: 1119729735
       tileset_222: 993620354
-      tileset_141: 2025001954
-      tileset_158: 1065758685
-      tileset_22: -1577618283
       tileset_184: -1427244776
+      tileset_141: 2025001954
+      tileset_22: -1577618283
+      tileset_158: 1065758685
       tileset_201: 44860590
       tileset_253: -751430746
       tileset_221: 1865692247
@@ -5802,12 +5802,12 @@ TextureImporter:
       tileset_46: -1967422900
       tileset_214: 218034062
       tileset_8: 1037896998
-      tileset_52: -523470145
-      tileset_101: -210651438
       tileset_177: -2066323025
+      tileset_101: -210651438
+      tileset_52: -523470145
+      tileset_248: 68881301
       tileset_125: -209692325
       tileset_175: 209868310
-      tileset_248: 68881301
       tileset_85: 465793505
       tileset_148: 1451325435
       tileset_98: 725791282
@@ -5819,8 +5819,8 @@ TextureImporter:
       tileset_247: 13849191
       tileset_256: 1672251425
       tileset_198: -1978713602
-      tileset_174: -686748076
       tileset_211: -1134440326
+      tileset_174: -686748076
       tileset_39: -253280421
       tileset_135: -42833203
       tileset_140: 1820712728
