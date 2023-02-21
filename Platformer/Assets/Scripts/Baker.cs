@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Baker : MonoBehaviour
 {
 
     private Rigidbody2D body;
     public float horizontal;
 
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
+    //private Animator animator;
+    //private SpriteRenderer spriteRenderer;
 
     private bool jumping = false;
 
@@ -19,23 +19,23 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //animator = GetComponent<Animator>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("horizontal", horizontal);
+        //animator.SetFloat("horizontal", horizontal);
         if (horizontal < 0) {
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
         } else {
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
         }
         if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
             print("Space!");
-            body.AddForce(new Vector2(0, 400));
+            body.AddForce(new Vector2(0, 325));
             jumping = true;
         }
     }
