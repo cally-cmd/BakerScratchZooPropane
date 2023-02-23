@@ -1234,9 +1234,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a5832a89a18ca44af72116d3ca6119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 2015017277}
   boundaryPercent: 0.3
   easing: 0.0005
+--- !u!1 &2015017277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7525387992590913398, guid: c07018df1a90ea049883d0d8c9fa79f3, type: 3}
+  m_PrefabInstance: {fileID: 640363103}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6599772688016229514
 PrefabInstance:
   m_ObjectHideFlags: 0

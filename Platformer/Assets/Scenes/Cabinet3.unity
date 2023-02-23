@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a5832a89a18ca44af72116d3ca6119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 2045906241}
   boundaryPercent: 0.3
   easing: 0.0005
 --- !u!1 &1537875789
@@ -983,6 +983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c07018df1a90ea049883d0d8c9fa79f3, type: 3}
+--- !u!1 &2045906241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7525387992590913398, guid: c07018df1a90ea049883d0d8c9fa79f3, type: 3}
+  m_PrefabInstance: {fileID: 2020835876}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5899900079890655860
 PrefabInstance:
   m_ObjectHideFlags: 0
