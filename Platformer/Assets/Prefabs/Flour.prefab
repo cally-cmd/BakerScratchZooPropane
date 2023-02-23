@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectible: {fileID: 6425452190747683204}
   sparkles: {fileID: 3824030282614423518, guid: c2cbc4129237efd46898e84d8a8fa8d7, type: 3}
+  text: 
 --- !u!61 &-5853286910428053880
 BoxCollider2D:
   m_ObjectHideFlags: 0

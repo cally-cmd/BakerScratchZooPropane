@@ -214,10 +214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee7a245d41137d4b9baff8491b5c030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
-  canvas: {fileID: 0}
-  eventSystem: {fileID: 0}
+  dialogBox: {fileID: 1974275498}
+  dialogText: {fileID: 1974275497}
+  canvas: {fileID: 924057466}
+  eventSystem: {fileID: 1215772317}
   mainScreen: {fileID: 0}
   collection: 0
 --- !u!4 &305621984
@@ -1444,6 +1444,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924057470}
     m_Modifications:
+    - target: {fileID: 1380327801667426177, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380327801667426177, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1380327801667426177, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1380327803736537581, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1539,6 +1551,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1380327803736537581, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
   m_PrefabInstance: {fileID: 1974275495}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1974275497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1380327801667426177, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+  m_PrefabInstance: {fileID: 1974275495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1974275498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1380327803736537582, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+  m_PrefabInstance: {fileID: 1974275495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6425452189739408816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1546,6 +1574,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6538319614628267339, guid: e8d759d861a72fb4395b042a5cef7590, type: 3}
+      propertyPath: text
+      value: Flour!
+      objectReference: {fileID: 0}
     - target: {fileID: 6425452190747683204, guid: e8d759d861a72fb4395b042a5cef7590, type: 3}
       propertyPath: m_Name
       value: Flour
@@ -1672,3 +1704,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectible: {fileID: 6640037635550856114}
   sparkles: {fileID: 0}
+  text: 
