@@ -11,7 +11,7 @@ public class Collectible : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -26,5 +26,8 @@ public class Collectible : MonoBehaviour
         GameObject part = Instantiate(sparkles);
         part.transform.position = transform.position;
         GameManager.Instance.collection += 1;
+        if (GameManager.Instance.collection == 5) {
+            print("The table has been unlocked!");
+        }
     }
 }
