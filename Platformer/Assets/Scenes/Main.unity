@@ -128,6 +128,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7525387992590913398, guid: c07018df1a90ea049883d0d8c9fa79f3, type: 3}
   m_PrefabInstance: {fileID: 1811465466232696164}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &232185385
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232185379}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b41b3c8b7932090418dd71cebb1d9005, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &316838012
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,7 +605,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -765,7 +785,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2262,10 +2282,10 @@ Tilemap:
     m_Data: {fileID: -2052106171, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 2057878092, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 490127395, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -210651438, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 173032813, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 4
@@ -2284,8 +2304,8 @@ Tilemap:
     m_Data: {fileID: 465538350, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1052640617, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -210651438, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 98816725, guid: 6dcc4c3372538eb498728141958b62fc, type: 3}
   - m_RefCount: 5
@@ -2539,6 +2559,50 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1408454765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 372118765372763911, guid: 4fed39d14794edb45a323a341843fce0, type: 3}
+  m_PrefabInstance: {fileID: 372118764755487582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408454770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408454765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3861c7e49a91748a0fa5364d07e612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Scenes/Cabinet1
+--- !u!61 &1408454771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408454765}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.039180577, y: 0.37562692}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5857983, y: 0.7512462}
+  m_EdgeRadius: 0
 --- !u!1001 &1994693055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,11 +2673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 372118765372763906, guid: 4fed39d14794edb45a323a341843fce0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.89
+      value: 22.93
       objectReference: {fileID: 0}
     - target: {fileID: 372118765372763906, guid: 4fed39d14794edb45a323a341843fce0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.46
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 372118765372763906, guid: 4fed39d14794edb45a323a341843fce0, type: 3}
       propertyPath: m_LocalPosition.z
