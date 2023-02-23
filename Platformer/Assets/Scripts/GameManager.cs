@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
 
-    //public GameObject dialogBox;
-    //public TextMeshProUGUI dialogText;
+    public GameObject dialogBox;
+    public TextMeshProUGUI dialogText;
 
     //public GameObject curtain;
     private bool raiseLower = false;
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         collection = 0;
+        dialogBox.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,6 +41,26 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    public void DialogShow(string s) {
+        dialogBox.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(TypeText(s));
+    }
+
+    IEnumerator TypeText(string s) {
+        dialogText.text = "";
+        foreach (char c in s.ToCharArray()) {
+            dialogText.text += c;
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield return new WaitForSeconds(10f);
+        DialogHide();
+    }
+
+    public void DialogHide() {
+        dialogBox.SetActive(false);
     }
 
     IEnumerator ColorLerpFunction(bool fadeout, float duration)
