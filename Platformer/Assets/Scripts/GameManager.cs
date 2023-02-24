@@ -11,9 +11,9 @@ public class GameManager : MonoBehaviour
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
     
-    private AudioSource startAudio;
-    private AudioSource mainAudio;
-    private AudioSource cabAudio;
+    public AudioSource startAudio;
+    public AudioSource mainAudio;
+    public AudioSource cabAudio;
 
     //public GameObject curtain;
     private bool raiseLower = false;
