@@ -9,7 +9,7 @@ public class Baker : MonoBehaviour
     public float horizontal;
 
     //private Animator animator;
-    //private SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
 
     private bool jumping = false;
 
@@ -20,7 +20,7 @@ public class Baker : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         //animator = GetComponent<Animator>();
-        //spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,12 +29,12 @@ public class Baker : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         //animator.SetFloat("horizontal", horizontal);
         if (horizontal < 0) {
-            //spriteRenderer.flipX = true;
+            spriteRenderer.flipX = true;
             if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.knifeCollected) {
                 body.AddForce(new Vector2(-325, 0));
             }
         } else {
-            //spriteRenderer.flipX = false;
+            spriteRenderer.flipX = false;
             if (Input.GetKeyDown(KeyCode.W) && GameManager.Instance.knifeCollected) {
                 body.AddForce(new Vector2(325, 0));
             }
