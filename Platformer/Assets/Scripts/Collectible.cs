@@ -35,5 +35,11 @@ public class Collectible : MonoBehaviour
         if (GameManager.Instance.collection == 5) {
             print("The table has been unlocked!");
         }
+        if (collectible.tag == "Knife") {
+            GameManager.Instance.knifeCollected = true;
+        }
+        if (collectible.tag == "BakingSheet") {
+            GameManager.Instance.bakingCollected = true;
+        }
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6218511587788887091}
   m_Layer: 0
   m_Name: BakingSheet
-  m_TagString: Untagged
+  m_TagString: BakingSheet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectible: {fileID: 7093636211097450582}
   sparkles: {fileID: 3824030282614423518, guid: c2cbc4129237efd46898e84d8a8fa8d7, type: 3}
-  text: Baking Sheet!
+  text: The collector of everything! I rise higher than most!
 --- !u!61 &-6218511587788887091
 BoxCollider2D:
   m_ObjectHideFlags: 0

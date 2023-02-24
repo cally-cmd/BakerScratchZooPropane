@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectible: {fileID: 6599772687511446476}
   sparkles: {fileID: 3824030282614423518, guid: c2cbc4129237efd46898e84d8a8fa8d7, type: 3}
-  text: Sugar!
+  text: Too much of me will make your teeth rot! But I taste so good!
 --- !u!61 &2947813655317208001
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     //public GameObject curtain;
     private bool raiseLower = false;
 
-
+    public bool knifeCollected = false;
+    public bool bakingCollected = false;
     public GameObject canvas;
     public GameObject eventSystem;
 

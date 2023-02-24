@@ -30,13 +30,22 @@ public class Baker : MonoBehaviour
         //animator.SetFloat("horizontal", horizontal);
         if (horizontal < 0) {
             //spriteRenderer.flipX = true;
+            if (Input.GetKeyDown(KeyCode.E) && GameManager.Instance.knifeCollected) {
+                body.AddForce(new Vector2(-325, 0));
+            }
         } else {
             //spriteRenderer.flipX = false;
+            if (Input.GetKeyDown(KeyCode.W) && GameManager.Instance.knifeCollected) {
+                body.AddForce(new Vector2(325, 0));
+            }
         }
         if (Input.GetKeyDown(KeyCode.Space) && !jumping) {
             print("Space!");
             body.AddForce(new Vector2(0, 325));
             jumping = true;
+        }
+        if (Input.GetKeyDown(KeyCode.W) && GameManager.Instance.bakingCollected) {
+            body.AddForce(new Vector2(0, 650));
         }
     }
 
