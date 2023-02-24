@@ -354,6 +354,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1380327803736537581, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
   m_PrefabInstance: {fileID: 154778553}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &154778555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1380327801667426177, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+  m_PrefabInstance: {fileID: 154778553}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &182135088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1765,61 @@ Transform:
   - {fileID: 1908313669}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &512752470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512752472}
+  - component: {fileID: 512752471}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &512752471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512752470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee7a245d41137d4b9baff8491b5c030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1380327803736537582, guid: 5458d6725ca07f148a3b473f9545bbe8, type: 3}
+  dialogText: {fileID: 154778555}
+  startAudio: {fileID: 8379444636222177707, guid: a248f04a45165334e929782b3a4eb7b3, type: 3}
+  mainAudio: {fileID: 7413752536631179910, guid: 19f40edc71e05b346871d65428f4f569, type: 3}
+  cabAudio: {fileID: 6866761318124770387, guid: b22bb720bf5306c4f9850817fe11ae1a, type: 3}
+  knifeCollected: 0
+  bakingCollected: 0
+  canvas: {fileID: 1441233683}
+  eventSystem: {fileID: 190878703}
+  mainScreen: {fileID: 0}
+  collection: 0
+--- !u!4 &512752472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512752470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.9965725, y: 3.7232778, z: 0.055162244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &603835684
 GameObject:
