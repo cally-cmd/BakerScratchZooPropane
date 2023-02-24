@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
+    
+    private AudioSource startAudio;
+    private AudioSource mainAudio;
+    private AudioSource cabAudio;
 
     //public GameObject curtain;
     private bool raiseLower = false;
@@ -121,5 +125,11 @@ public class GameManager : MonoBehaviour
     public void StartGame() {
         StartCoroutine(LoadYourAsyncScene("Main"));
         //mainScreen.SetActive(false);
+    }
+    
+    IEnumerator Sound(AudioSource audio) {
+        yield return new WaitForSeconds(2f);
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
     }
 }
