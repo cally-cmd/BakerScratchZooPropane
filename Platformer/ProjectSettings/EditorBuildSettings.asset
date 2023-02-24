@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cabinet2.unity
     guid: 7931d6016c98f424cb572daf3460ff46
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 71c03a70f79393b45bedd774670b47a0
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 20af7f98e8d37c94297f15e1a4f4a4f2
+  - enabled: 1
+    path: Assets/Scenes/HelpMenu.unity
+    guid: 28d31f2dce883cc468192a2a0e5017fc
   m_configObjects: {}
