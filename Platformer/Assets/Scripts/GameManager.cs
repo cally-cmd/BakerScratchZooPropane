@@ -109,6 +109,7 @@ public class GameManager : MonoBehaviour
         }
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+        dialogBox.SetActive(false);
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
